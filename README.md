@@ -112,21 +112,12 @@ Below is a table comparing the performance of different models on a hypothetical
 **Notes**:
 - The Gemma 4B model (fine-tuned in this repo) is optimized for grammar scoring with LoRA and 4-bit quantization.
 
-## Notes and Limitations
+## Notes and Specification
 
-- **Hardware Requirements**: A GPU with at least 12GB VRAM is recommended for fine-tuning and inference. CPU fallback is available but significantly slower.
+- **Hardware Used**: Fine-tuning and inference were performed on an NVIDIA L4 GPU with 12GB VRAM. This setup provides a good balance of memory and computational power for the Gemma-3-4B model quantized to 4-bit using LoRA. The L4 GPU supports efficient processing with the specified batch size (per_device_train_batch_size=4) and gradient accumulation steps (gradient_accumulation_steps=4).
 - **Dataset**: You must provide your own audio datasets and corresponding CSV files. The scripts assume specific column names (`filename`, `label`).
-- **Model Availability**: The pre-trained Gemma-3-4B model and Whisper model are downloaded from HuggingFace, requiring an internet connection.
-- **Customization**: Adjust hyperparameters (e.g., `learning_rate`, `num_train_epochs`) in `finetune_G_eval.py` for better performance on your specific dataset.
+- **Model Downloads**: The pre-trained unsloth/gemma-3-4b-it-unsloth-bnb-4bit model and openai/whisper-large-v3-turbo are downloaded from HuggingFace during execution, requiring an active internet connection.
 
 ## Contributing
 
 Feel free to open issues or submit pull requests for bug fixes, feature additions, or performance improvements. Contributions to optimize model fine-tuning or extend support for other models are welcome!
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details (create one if not present).
-
----
-
-This README provides a comprehensive guide to your project, including installation, usage instructions, and a comparison table. You can refine the Kaggle scores in the table based on actual experiment results. Let me know if you'd like further adjustments!
