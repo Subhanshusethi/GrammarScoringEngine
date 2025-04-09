@@ -1,0 +1,36 @@
+# Core dependencies
+torch>=2.0
+transformers @ git+https://github.com/huggingface/transformers@v4.49.0-Gemma-3
+datasets
+pandas
+scikit-learn
+tqdm
+sentencepiece
+protobuf
+huggingface_hub
+ffmpeg
+hf_transfer
+
+# Unsloth & LoRA fine-tuning tools
+unsloth>=2024.3.27
+unsloth_zoo
+trl==0.15.2
+peft
+accelerate
+bitsandbytes
+xformers==0.0.29.post3
+triton
+cut_cross_entropy
+
+# vLLM (excluding numpy, transformers, xformers to avoid conflicts)
+absl-py
+filelock
+psutil
+pyyaml
+rich
+scipy
+starlette
+typing_extensions
+uvicorn
+requests
+aiohttp
