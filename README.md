@@ -110,6 +110,8 @@ Below is a table comparing the performance of different models on Kaggle competi
 | Gemma 1B      | 1B         | 0.782  |
 
 **Notes**:
+![image](https://github.com/user-attachments/assets/fa489d16-0620-442a-858b-0643881428fa)
+
 - The Gemma 4B model (fine-tuned in this repo) is optimized for grammar scoring with LoRA and 4-bit quantization.
 
 ## Notes and Specification
