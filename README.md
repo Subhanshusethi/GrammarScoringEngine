@@ -120,6 +120,7 @@ Below is a table comparing the performance of different models on Kaggle competi
 - **Dataset**: You must provide your own audio datasets and corresponding CSV files. The scripts assume specific column names (`filename`, `label`).
 - **Model Downloads**: The pre-trained unsloth/gemma-3-4b-it-unsloth-bnb-4bit model and openai/whisper-large-v3-turbo are downloaded from HuggingFace during execution, requiring an active internet connection.
 
-## Contributing
+## Resources
+![https://github.com/unslothai/unsloth.git]
 
-Feel free to open issues or submit pull requests for bug fixes, feature additions, or performance improvements. Contributions to optimize model fine-tuning or extend support for other models are welcome!
+
