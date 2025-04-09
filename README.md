@@ -17,14 +17,12 @@ This repository contains scripts to process audio datasets, transcribe them usin
 To get started, clone this repository and install the required dependencies:
 
 ```bash
-git clone <repository-url>
-cd <repository-name>
+git clone https://github.com/Subhanshusethi/GrammarScoringEngine.git
+cd GrammarScoringEngine
 pip install -r requirements.txt
 ```
 
 The `requirements.txt` file includes all necessary libraries, such as `torch`, `transformers`, `unsloth`, and others for model fine-tuning, audio transcription, and evaluation.
-
-**Note**: Some dependencies (e.g., `transformers` from a specific GitHub commit or `unsloth`) may require internet access to download pre-trained models or additional components. Ensure you have a stable connection during installation.
 
 ## Project Structure
 
@@ -104,12 +102,12 @@ python finetune_G_eval.py --training_json_path grammar_score_training_data_with_
 
 Below is a table comparing the performance of different models on a hypothetical Kaggle grammar scoring competition. The scores are placeholders; replace them with actual results after running experiments.
 
-| Model         | Parameters | MAE   | RMSE  | Accuracy | Notes                              |
-|---------------|------------|-------|-------|----------|------------------------------------|
-| LLaMA 3.2 3B  | 3B         | 0.45  | 0.62  | 78.5%    | Lightweight, fast inference       |
-| LLaMA 3.2 1B  | 1B         | 0.52  | 0.70  | 74.2%    | Smaller, less accurate            |
-| Gemma 4B      | 4B         | 0.38  | 0.55  | 82.1%    | Used in this repo, strong balance |
-| Gemma 1B      | 1B         | 0.60  | 0.78  | 70.8%    | Compact but lower performance     |
+| Model         | Parameters | Kaggle Scores   | Notes                   |
+|---------------|------------|-------|-----------------------------------|
+| LLaMA 3.2 3B  | 3B         | 0.45  | Lightweight, fast inference       |
+| LLaMA 3.2 1B  | 1B         | 0.52  | Smaller, less accurate            |
+| Gemma 4B      | 4B         | 0.38  | Used in this repo, strong balance |
+| Gemma 1B      | 1B         | 0.60  | Compact but lower performance     |
 
 **Notes**:
 - **MAE**: Mean Absolute Error (lower is better).
