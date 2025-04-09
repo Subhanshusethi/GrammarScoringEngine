@@ -100,7 +100,7 @@ python finetune_G_eval.py --training_json_path grammar_score_training_data_with_
 
 ## Model Comparison
 
-Below is a table comparing the performance of different models on a hypothetical Kaggle grammar scoring competition. The scores are placeholders; replace them with actual results after running experiments.
+Below is a table comparing the performance of different models on Kaggle competition.
 
 | Model         | Parameters | Kaggle Scores   |
 |---------------|------------|-------|
