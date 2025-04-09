@@ -102,17 +102,14 @@ python finetune_G_eval.py --training_json_path grammar_score_training_data_with_
 
 Below is a table comparing the performance of different models on a hypothetical Kaggle grammar scoring competition. The scores are placeholders; replace them with actual results after running experiments.
 
-| Model         | Parameters | Kaggle Scores   | Notes                   |
-|---------------|------------|-------|-----------------------------------|
-| LLaMA 3.2 3B  | 3B         | 0.45  | Lightweight, fast inference       |
-| LLaMA 3.2 1B  | 1B         | 0.52  | Smaller, less accurate            |
-| Gemma 4B      | 4B         | 0.38  | Used in this repo, strong balance |
-| Gemma 1B      | 1B         | 0.60  | Compact but lower performance     |
+| Model         | Parameters | Kaggle Scores   |
+|---------------|------------|-------|
+| LLaMA 3.2 3B  | 3B         | 0.766  |
+| LLaMA 3.2 1B  | 1B         | 0.71  |
+| Gemma 4B      | 4B         | 0.802  |
+| Gemma 1B      | 1B         | 0.782  |
 
 **Notes**:
-- **MAE**: Mean Absolute Error (lower is better).
-- **RMSE**: Root Mean Squared Error (lower is better).
-- **Accuracy**: Percentage of rounded predictions matching true scores (higher is better).
 - The Gemma 4B model (fine-tuned in this repo) is optimized for grammar scoring with LoRA and 4-bit quantization.
 
 ## Notes and Limitations
